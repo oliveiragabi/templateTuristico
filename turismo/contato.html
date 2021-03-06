@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+
+    body {
+    font-family: Arial;
+    font-size: 17px;
+    margin-top: 68px;
+    margin-left: 40px;
+    margin-right: 40px
+  }
+
+/* Style inputs */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=text], {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+}
+
+.containerContato {
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+    </style>
+
+<body>
+    <!-- NAV FIXO -->
+    <nav class="navbar navbar-light navbar-expand fixed-top bg-light d-inline float-left" style="height: 50px;">
+        <div class="collapse navbar-collapse align-self-center" id="navcol-1">
+            <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"> <strong> INICIO</strong></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="galeria.html"><strong>GALERIA</strong></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="comprar.html"><strong>COMPRAR</strong></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="contato.html"><strong>CONTATO</strong></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--CONTATO-->
+    <div class="containerContato">
+        <div style="text-align:center">
+            <h2>Contato</h2>
+            <p>Nos mande uma mensagem ou venha até nós!</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.444038050893!2d-46.60589268538067!3d-23.480510584723053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66d4dfb74d3%3A0xc205550fd1844919!2sTucuruvi!5e0!3m2!1spt-BR!2sbr!4v1543189122896"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">Nome Completo</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Seu nome completo..">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Seu nome completo..">
+                    <label for="tel">Telefone</label>
+                    <input type="text" id="tel" name="Telefone" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="Seu telefone..">
+                    <label for="subject">Mensagem</label>
+                    <textarea id="subject" name="subject" placeholder="Escreva aqui.." style="height:170px"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!--FOOTER-->
+        <div class="footer-basic">
+                <footer>
+                    <p class="copyright">Company Name © 2017</p>
+                </footer>
+            </div>
+
+            
+    <!-- SCRIPT-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Comprar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+  .myLink {display: none}
+
+body {
+    font-family: Arial;
+    font-size: 17px;
+    margin-top: 68px;
+
+    background-color: transparent;
+  }
+
+  </style>
+
+<body class="w3-light-grey">
+  <!-- NAV FIXO -->
+  <nav class="navbar navbar-light navbar-expand fixed-top bg-light d-inline float-left" style="height: 50px;">
+    <div class="collapse navbar-collapse align-self-center" id="navcol-1">
+      <ul class="nav navbar-nav mx-auto">
+        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"> <strong> INICIO </strong></a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link active" href="galeria.html"><strong>GALERIA</strong></a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link active" href="comprar.html"><strong>COMPRAR</strong></a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link active" href="contato.html"><strong>CONTATO</strong></a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content " style="max-width:1500px">
+    <img class="w-100 d-block" src="assets/img/camposdegirassol.jpg" alt="London" width=100% height=100%>
+    <div class="w3-display-middle" style="width:65%">
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Transporte</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hoteis</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa  fas fa-map w3-margin-right"></i>Melhores Rotas</button>
+      </div>
+
+      <!-- Tabs -->
+      <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Viagem com a gente!</h3>
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half">
+            <label>De</label>
+            <input class="w3-input w3-border" type="text" placeholder="Ex. São Paulo">
+          </div>
+          <div class="w3-half">
+            <label>Para</label>
+            <input class="w3-input w3-border" type="text" placeholder="Ex. Bahia">
+          </div>
+        </div>
+        <p><button class="w3-button w3-dark-grey" style="margin-top: 10px">Pesquisar</button></p>
+      </div>
+
+      <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Ache os melhores hoteis</h3>
+        <p>Encontre os melhores, mais baratos e mais confortaveis hoteis</p>
+        <input class="w3-input w3-border" type="text" placeholder="Ex. Bahia">
+        <p><button class="w3-button w3-dark-grey" style="margin-top: 10px">Pesquisar</button></p>
+      </div>
+
+      <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Ache as melhores rotas para a sua viagem!</h3>
+        <p><span class="w3-tag w3-deep-orange">DESCONTO!</span> Desconto especial em TODO site só por hoje: 25% a menos com o cupom de desconto TravelWithUs01</p>
+        <input class="w3-input w3-border" type="text" placeholder="Ex. São Paulo para Bahia">
+        <p><button class="w3-button w3-dark-grey" style="margin-top: 10px">Pesquisar</button></p>
+      </div>
+    </div>
+  </header>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px; margin-top: 25px">
+
+    <div class="w3-container w3-margin-top" id="rooms">
+      <h3>Sugestões de lugares</h3>
+      <p>Escolha as datas de ida e volta para as nossas sugestões.</p>
+    </div>
+    
+    <div class="w3-row-padding">
+      <div class="w3-col m3">
+        <label><i class="fa fa-calendar-o"></i> Ida: </label>
+        <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+      </div>
+      <div class="w3-col m3">
+        <label><i class="fa fa-calendar-o"></i> Volta: </label>
+        <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+      </div>
+      <div class="w3-col m2">
+        <label><i class="fa fa-male"></i> Adultos </label>
+        <input class="w3-input w3-border" type="number" placeholder="1">
+      </div>
+      <div class="w3-col m2">
+        <label><i class="fa fa-child"></i> Crianças </label>
+        <input class="w3-input w3-border" type="number" placeholder="0">
+      </div>
+      <div class="w3-col m2">
+        
+        <button class="w3-button w3-block w3-black" style="margin-top: 33px">Pesquisar</button>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-padding-16">
+      <div class="w3-third w3-margin-bottom" >
+        <img src="assets/img/GBVSITE.png" alt="Norway" style="width: 490px; height: 200px;">
+        <div class="w3-container w3-white">
+          <h3>Estados Unidos</h3>
+          <h6 class="w3-opacity">Preço R$99</h6>
+          <h6 class="w3-opacity"><b>QUARTOS COM:</b></h6>
+          <p>CAMA DE SOLTEIRO</p>
+          <p>15m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">COMPRAR</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom" >
+        <img src="assets/img/ko-phi-phi-h.jpeg" alt="Norway" style="width: 490px; height: 200px;">
+        <div class="w3-container w3-white">
+          <h3>Tailândia</h3>
+          <h6 class="w3-opacity">Preço R$149</h6>
+          <h6 class="w3-opacity"><b>QUARTOS COM:</b></h6>
+          <p>CAMA DE CASAL</p>
+          <p>25m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">COMPRAR</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom" >
+        <img src="assets/img/viagem-aventura-vestuario.jpg" alt="Norway" style="width: 490px; height: 200px;">
+        <div class="w3-container w3-white">
+          <h3>Kuari Pass</h3>
+          <h6 class="w3-opacity">Preço $199</h6>
+          <h6 class="w3-opacity"><b>QUARTOS COM:</b></h6>
+          <p>CAMA DE CASAL E SOLTEIRO</p>
+          <p>40m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--FOOTER-->
+    <div class="footer-basic">
+      <footer>
+        <p class="copyright">Company Name © 2017</p>
+      </footer>
+    </div>
+
+
+    <!-- SCRIPT-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/script.min.js "></script>
+</body>
+
+</html>
